@@ -2,6 +2,6 @@
     <head>
         <!-- Add local resources -->
     	<css src="css/background.css"/>
-    
+		<css src="css/tester.css"/>
     </head>
 </page>

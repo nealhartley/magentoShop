@@ -1,0 +1,10 @@
+
+body{
+	background: black;
+}
+
+.page-header{
+		background-image: url("../images/backgrounds/bg_temp.jpg");
+		background-size: 100% 100%
+		background-repeat: no-repeat;
+}
