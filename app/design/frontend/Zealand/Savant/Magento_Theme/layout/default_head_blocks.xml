@@ -3,5 +3,9 @@
         <!-- Add local resources -->
     	<css src="css/background.css"/>
 		<css src="css/tester.css"/>
+		
+		<!-- Google Fonts -->
+		<link src="http://fonts.googleapis.com/css?family=Roboto" src_type="url" /> 
+		
     </head>
 </page>
