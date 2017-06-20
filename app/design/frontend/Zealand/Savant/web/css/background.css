@@ -1,13 +1,34 @@
 
 body{
 	background-color: black;
-        font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+
+body a{
+	color: white;
+}
+
+body a:hover{
+	color: #1c7496;
+	text-decoration:none;
 }
 
 .page-header{
-    background-image: url("../images/backgrounds/zips.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    padding-bottom: 10em;
+	border-bottom: 0px;  
 }
 
+.header.content{
+	background-image: url("../images/backgrounds/zips.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+	padding-bottom: 20em;
+}
+
+.panel.wrapper{
+	border-bottom: 0px;
+}
+
+#search{
+	background-color: #666666;
+}
