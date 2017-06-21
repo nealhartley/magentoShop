@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21/06/2017, 2:37:44 PM
+    Author     : Neal Hartley
+*/
+
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body a{
+    color: white;
+    text-decoration:none;
+}
+
+body a:hover{
+    color: #1c7496;
+    text-decoration:none;
+}
+
+
+/*styling for the header. this includes logo and search bar plus the log in and create accoudn links at top*/
+.page-header{
+    border-bottom-style: none; 
+}
+
+.header.content{
+    background-image: url("../images/backgrounds/zips.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position-y: 5em;
+    padding-bottom: 20em;
+}
+
+.panel.wrapper{
+    border-bottom-style: none;
+}
+
+#search{
+    background-color: #999999;
+}
+
+.action.search{
+    float: right;
+    background-color: #1c7496;
+}
+
+.page-footer{
+    background-color: #999999;
+}
+
+.block-search{
+    top: 0;
+}
+
+/*   styling for the tabbed inventory bar from here*/
+
+.section-items{
+    background-color: #999999;
+}

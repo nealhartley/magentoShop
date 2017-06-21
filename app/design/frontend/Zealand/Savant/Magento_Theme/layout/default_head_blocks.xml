@@ -1,11 +1,11 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-        <!-- Add local resources -->
-    	<css src="css/background.css"/>
-		<css src="css/tester.css"/>
-		
-		<!-- Google Fonts -->
-		<link src="http://fonts.googleapis.com/css?family=Roboto" src_type="url" /> 
+        <!-- Add local resources -->    	
+        <css src="css/local-l.css" media="screen and (min-width: 768px)"/>
+        <css src="css/local-m.css"/>
+        
+        <!-- Google Fonts -->
+        <link src="http://fonts.googleapis.com/css?family=Roboto" src_type="url" /> 
 		
     </head>
 </page>
