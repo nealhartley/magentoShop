@@ -23,7 +23,7 @@ if (trim($block->getPageHeading())) {
         <?php if ($block->getAddBaseAttributeAria()): ?>
             aria-labelledby="<?php /* @escapeNotVerified */ echo $block->getAddBaseAttributeAria(); ?>"
         <?php endif; ?>>
-        <?php /* @escapeNotVerified */ echo $title . 'Neal and Steven' ?>
+        <?php /* @escapeNotVerified */ echo $title?>
     </h1>
     <?php echo $block->getChildHtml(); ?>
 </div>

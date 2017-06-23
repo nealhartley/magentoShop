@@ -4,7 +4,96 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 21/06/2017, 2:37:07 PM
-    Author     : Dev
+    Created on : 21/06/2017, 2:37:44 PM
+    Author     : Neal Hartley
 */
+
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body a{
+    color: white;
+    text-decoration:none;
+}
+
+body a:hover{
+    color: #1c7496;
+    text-decoration:none;
+}
+
+
+/*styling for the header. this includes logo and search bar plus the log in and create accoudn links at top*/
+.page-header{
+    border-bottom-style: none; 
+}
+
+.header.content{
+    background-image: url("../images/backgrounds/zips.jpg");
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    background-position-y: 20%;
+    padding-bottom: 30em;
+    max-width: 100%;
+}
+
+.panel.wrapper{
+    border-bottom-style: none;
+}
+
+#search{
+    background-color: #999999;
+}
+
+.action.search{
+    float: right;
+    background-color: #1c7496;
+}
+
+.page-footer{
+    background-color: #999999;
+}
+
+.block-search{
+    top: 0;
+}
+
+/*   styling for the tabbed inventory bar from here*/
+
+.nav-sections{
+    margin-bottom: 0px;
+}
+
+.section-items{
+    background-color: #999999;
+}
+
+.navigation{
+    background-color: #999999;
+}
+
+.level-top{
+    color: white;
+}
+
+.level10{
+    background-color: #999999;
+}
+
+/*main content styling*/
+
+.breadcrumbs{
+    margin-bottom: 0px;
+    background-color: white;
+    color: #999999;
+    max-width: 100%;
+}
+
+#maincontent{
+    background-color: white;
+    max-width: 100%;
+    color:#1c7496;
+}
 

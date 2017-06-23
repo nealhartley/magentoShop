@@ -28,18 +28,26 @@ body a:hover{
 /*styling for the header. this includes logo and search bar plus the log in and create accoudn links at top*/
 .page-header{
     border-bottom-style: none; 
+	border-bottom: 1px solid black;
+}
+
+.page-header.panel-wrapper{
+	border-bottom-color: black;
+	border-bottom: 1px solid black;
 }
 
 .header.content{
     background-image: url("../images/backgrounds/zips.jpg");
-    background-size: 100% 100%;
+    background-size: 100% 80%;
     background-repeat: no-repeat;
-    background-position-y: 5em;
-    padding-bottom: 20em;
+    background-position-y: 20%;
+    padding-bottom: 30em;
+    max-width: 100%;
 }
 
 .panel.wrapper{
     border-bottom-style: none;
+	border-bottom: 1px solid black;
 }
 
 #search{
@@ -52,7 +60,7 @@ body a:hover{
 }
 
 .page-footer{
-    background-color: #999999;
+    background-color: #333333;
 }
 
 .block-search{
@@ -61,6 +69,43 @@ body a:hover{
 
 /*   styling for the tabbed inventory bar from here*/
 
+.nav-sections{
+    margin-bottom: 0px;
+}
+
 .section-items{
-    background-color: #999999;
+    background-color: #333333;
+}
+
+.navigation{
+    background-color: #333333;
+}
+
+.level-top{
+    color: white;
+}
+
+.level10.active{
+    background-color: #333333;
+    color: white;
+}
+
+.navigation .level0 > .level-top {
+	color: white;	
+}
+
+
+/*main content styling*/
+.breadcrumbs{
+    padding-top: 5px;
+    margin-bottom: 0px;
+    background-color: white;
+    color: #999999;
+    max-width: 100%;
+}
+
+#maincontent{
+    background-color: white;
+    max-width:100%;
+    color:#1c7496;
 }
