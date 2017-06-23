@@ -27,6 +27,12 @@ body a:hover{
 
 /*styling for the header. this includes logo and search bar plus the log in and create accoudn links at top*/
 .page-header{
+	background-image: url("../images/backgrounds/zips.jpg");
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    background-position: 0em 6em;
+    padding-bottom: 30em;
+	
     border-bottom-style: none; 
 	border-bottom: 1px solid black;
 }
@@ -37,11 +43,7 @@ body a:hover{
 }
 
 .header.content{
-    background-image: url("../images/backgrounds/zips.jpg");
-    background-size: 100% 80%;
-    background-repeat: no-repeat;
-    background-position-y: 20%;
-    padding-bottom: 30em;
+
     max-width: 100%;
 }
 

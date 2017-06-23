@@ -27,20 +27,29 @@ body a:hover{
 
 /*styling for the header. this includes logo and search bar plus the log in and create accoudn links at top*/
 .page-header{
+	background-image: url("../images/backgrounds/zips.jpg");
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    background-position: 0em 10em;
+    padding-bottom: 30em;
+	
     border-bottom-style: none; 
+	border-bottom: 1px solid black;
+}
+
+.page-header.panel-wrapper{
+	border-bottom-color: black;
+	border-bottom: 1px solid black;
 }
 
 .header.content{
-    background-image: url("../images/backgrounds/zips.jpg");
-    background-size: 100% 80%;
-    background-repeat: no-repeat;
-    background-position-y: 20%;
-    padding-bottom: 30em;
+
     max-width: 100%;
 }
 
 .panel.wrapper{
     border-bottom-style: none;
+	border-bottom: 1px solid black;
 }
 
 #search{
@@ -53,7 +62,7 @@ body a:hover{
 }
 
 .page-footer{
-    background-color: #999999;
+    background-color: #333333;
 }
 
 .block-search{
@@ -67,24 +76,30 @@ body a:hover{
 }
 
 .section-items{
-    background-color: #999999;
+    background-color: #333333;
 }
 
 .navigation{
-    background-color: #999999;
+    background-color: #333333;
 }
 
 .level-top{
     color: white;
 }
 
-.level10{
-    background-color: #999999;
+.level10.active{
+    background-color: #333333;
+    color: white;
 }
 
-/*main content styling*/
+.navigation .level0 > .level-top {
+	color: white;	
+}
 
+
+/*main content styling*/
 .breadcrumbs{
+    padding-top: 5px;
     margin-bottom: 0px;
     background-color: white;
     color: #999999;
@@ -93,7 +108,7 @@ body a:hover{
 
 #maincontent{
     background-color: white;
-    max-width: 100%;
+    max-width:100%;
     color:#1c7496;
 }
 
