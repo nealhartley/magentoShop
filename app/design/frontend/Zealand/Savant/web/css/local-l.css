@@ -12,6 +12,7 @@ body{
     background-color: black;
     font-family: 'Roboto', sans-serif;
     color: white;
+	line-height: 1;
 }
 
 body a{
@@ -37,8 +38,8 @@ body a:hover{
 	border-bottom: 1px solid black;
 }
 
-.page-header.panel-wrapper{
-	border-bottom-color: black;
+.page-header .panel.wrapper {
+   	border-bottom-color: black;
 	border-bottom: 1px solid black;
 }
 
@@ -93,7 +94,23 @@ body a:hover{
 }
 
 .navigation .level0 > .level-top {
-	color: white;	
+	color: white;
+	line-height: 33px;
+}
+
+.level0.has-active > .level-top {
+    background-color: #1c7496;
+	border-style: hidden;
+}
+
+.navigation .level0 .submenu .active > a {
+  
+    border-style: hidden;
+  
+}
+
+.navigation .level0.has-active > .level-top {
+    color: white;    
 }
 
 
