@@ -57,6 +57,10 @@ body a:hover{
     background-color: #999999;
 }
 
+.action .advanced{
+	display: none;
+}
+
 .action.search{
     float: right;
     background-color: #1c7496;
@@ -97,6 +101,9 @@ body a:hover{
 	color: white;
 	line-height: 33px;
 }
+.navigation .level0 > .level-top: hover{
+	color: white;
+}
 
 .level0.has-active > .level-top {
     background-color: #1c7496;
@@ -113,6 +120,18 @@ body a:hover{
     color: white;    
 }
 
+.navigation .level0 .submenu {
+	background-color: #333333;
+}
+
+.navigation .level0 .submenu a{
+	color: white;
+}
+.navigation .level0 .submenu a:hover{
+	background-color: #333333;
+}
+
+
 
 /*main content styling*/
 .breadcrumbs{
@@ -128,3 +147,47 @@ body a:hover{
     max-width:100%;
     color:#1c7496;
 }
+
+/*footer styling*/
+
+
+.footer.content .block{
+	float: left;
+}
+
+.footer.content {
+    border-top: 1px solid #333333;
+}
+
+.footer .copyright, .footer .bugs {
+    display: none;
+}
+
+.footer.content .links{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

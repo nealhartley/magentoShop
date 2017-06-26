@@ -72,30 +72,13 @@ body a:hover{
 /*   styling for the tabbed inventory bar from here*/
 
 .nav-sections{
-    margin-bottom: 0px;
+	width:80%;
 }
 
-.section-items{
-    background-color: #333333;
+.nav-sections-items{
+	width: 80%;
+	float: right;
 }
-
-.navigation{
-    background-color: #333333;
-}
-
-.level-top{
-    color: white;
-}
-
-.level10.active{
-    background-color: #333333;
-    color: white;
-}
-
-.navigation .level0 > .level-top {
-	color: white;	
-}
-
 
 /*main content styling*/
 .breadcrumbs{
