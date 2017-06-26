@@ -73,12 +73,44 @@ body a:hover{
 
 .nav-sections{
 	width:80%;
+	background-color: #333333;
+}
+
+.navigation {
+    background: #333333;
+    
+}
+
+.nav-sections-item-title {
+    background: #333333;
+    border: none #333333;
+  
 }
 
 .nav-sections-items{
 	width: 80%;
 	float: right;
 }
+
+
+.navigation a, .navigation a:hover {
+    color: white;
+   
+}
+
+.minicart-wrapper {
+    position: static;
+	float: none;
+	
+}
+
+styles-m.css:5473
+.minicart-wrapper {
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+
 
 /*main content styling*/
 .breadcrumbs{

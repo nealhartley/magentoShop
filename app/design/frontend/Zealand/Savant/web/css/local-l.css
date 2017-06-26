@@ -54,7 +54,7 @@ body a:hover{
 }
 
 #search{
-    background-color: #999999;
+    background-color: #333333;
 }
 
 .action .advanced{
@@ -97,13 +97,33 @@ body a:hover{
     color: white;
 }
 
+.navigation .level0.active > .level-top, .navigation .level0.has-active > .level-top {
+    border-color: #333333;
+    border-style: none;
+    border-width: 0 0 3px;
+    color: white;
+   
+}
+
 .navigation .level0 > .level-top {
 	color: white;
 	line-height: 33px;
 }
+
 .navigation .level0 > .level-top: hover{
 	color: white;
 }
+
+.navigation .level0 > .level-top.ui-state-focus{
+	color: white;
+	
+}
+
+.navigation .level0 > .level-top {
+	color: white;
+	line-height: 33px;
+}
+
 
 .level0.has-active > .level-top {
     background-color: #1c7496;
@@ -122,12 +142,13 @@ body a:hover{
 
 .navigation .level0 .submenu {
 	background-color: #333333;
+	border: 0px none  #333333;
 }
 
 .navigation .level0 .submenu a{
 	color: white;
 }
-.navigation .level0 .submenu a:hover{
+.navigation .level0 .submenu a:hover, .navigation .level0 .submenu a.ui-state-focus{
 	background-color: #333333;
 }
 
@@ -164,7 +185,7 @@ body a:hover{
 }
 
 .footer.content .links{
-	width: 100%;
+	width: 70%;
 }
 
 
