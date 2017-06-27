@@ -28,9 +28,9 @@ body a:hover{
 /*styling for the header. this includes logo and search bar plus the log in and create accoudn links at top*/
 .page-header{
 	background-image: url("../images/backgrounds/zips.jpg");
-    background-size: 100% 80%;
+    background-size: 200% 80%;
     background-repeat: no-repeat;
-    background-position: 0em 10em;
+    background-position: -10em 10em;
     padding-bottom: 30em;
 	
     border-bottom-style: none; 
@@ -127,3 +127,32 @@ styles-m.css:5473
     color:#1c7496;
 }
 
+.columns .column.main {
+	padding-bottom: 0px;
+}
+
+/*footer styling*/
+
+input[type="email"]{
+	background-color: #666666;
+}
+
+.footer.content {
+    border-top: 1px solid #333333;
+}
+
+.footer .copyright, .footer .bugs {
+    display: none;
+}
+
+
+.block.newsletter .action.subscribe {
+    border-radius: 0px;
+}
+
+.action.primary {
+    background-image: none;
+    background: #1c7496;
+    border: 1px solid #1c7496;
+
+}

@@ -44,7 +44,7 @@ body a:hover{
 }
 
 .header.content{
-
+	padding-top: 0px;
     max-width: 100%;
 }
 
@@ -71,7 +71,7 @@ body a:hover{
 }
 
 .block-search{
-    top: 0;
+    top: 2em;
 }
 
 /*   styling for the tabbed inventory bar from here*/
@@ -111,11 +111,11 @@ body a:hover{
 }
 
 .navigation .level0 > .level-top: hover{
-	color: white;
+	color: #1c7496;
 }
 
 .navigation .level0 > .level-top.ui-state-focus{
-	color: white;
+	color: #1c7496;
 	
 }
 
@@ -150,6 +150,7 @@ body a:hover{
 }
 .navigation .level0 .submenu a:hover, .navigation .level0 .submenu a.ui-state-focus{
 	background-color: #333333;
+	color: #1c7496;
 }
 
 
@@ -163,6 +164,14 @@ body a:hover{
     max-width: 100%;
 }
 
+.column.main {
+    min-height: 0px;
+}
+
+.columns .column.main {
+    padding-bottom: 0px;
+}
+
 #maincontent{
     background-color: white;
     max-width:100%;
@@ -171,6 +180,9 @@ body a:hover{
 
 /*footer styling*/
 
+input[type="email"]{
+	background-color: #666666;
+}
 
 .footer.content .block{
 	float: left;
@@ -189,9 +201,16 @@ body a:hover{
 }
 
 
+.block.newsletter .action.subscribe {
+    border-radius: 0px;
+}
 
+.action.primary {
+    background-image: none;
+    background: #1c7496;
+    border: 1px solid #1c7496;
 
-
+}
 
 
 
