@@ -53,8 +53,37 @@ body a:hover{
 	border-bottom: 1px solid black;
 }
 
+
 #search{
     background-color: #333333;
+}
+
+.block-search .action.search {
+	background-color: #1c7496;
+	float: right;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.block-search .action.search: hover{
+	background-color: #1c7496;
+
+}
+
+.block-search input {
+   
+    padding-right: 0px;
+	color: white;
+   
+}
+
+.block-search .nested {
+    display: none;
+  
+}
+
+input[type="text"]{
+	border : none;
 }
 
 .action .advanced{
@@ -86,6 +115,7 @@ body a:hover{
 
 .navigation{
     background-color: #333333;
+	float: left;
 }
 
 .level-top{
@@ -102,6 +132,17 @@ body a:hover{
     border-style: none;
     border-width: 0 0 3px;
     color: white;
+	background-color: #1c7496;
+   
+}
+
+.navigation .level0.active > .level-top: hover, .navigation .level0.has-active > .level-top: hover {
+    border-color: #333333;
+    border-style: none;
+    border-width: 0 0 3px;
+    color: white;
+	background-color: #1c7496;
+	
    
 }
 
@@ -133,7 +174,13 @@ body a:hover{
 .navigation .level0 .submenu .active > a {
   
     border-style: hidden;
+	background-color: #1c7496;
+}
+
+.navigation .level0 .submenu .active > a: hover {
   
+    border-style: hidden;
+	background-color: #1c7496;
 }
 
 .navigation .level0.has-active > .level-top {
@@ -157,8 +204,9 @@ body a:hover{
 
 /*main content styling*/
 .breadcrumbs{
-    padding-top: 5px;
-    margin-bottom: 0px;
+    padding-top: 1em;
+	padding-bottom: 2em;
+    margin-bottom: 0em;
     background-color: white;
     color: #999999;
     max-width: 100%;
@@ -178,10 +226,17 @@ body a:hover{
     color:#1c7496;
 }
 
+
+.page-title-wrapper{
+	display: none;
+}
+
+
 /*footer styling*/
 
 input[type="email"]{
 	background-color: #666666;
+	border: none;
 }
 
 .footer.content .block{
@@ -212,7 +267,13 @@ input[type="email"]{
 
 }
 
+/* styling for individual products*/
 
+.page-products .product-item-info {
+    background-color:#f4f4f4;
+		
+	
+}
 
 
 
