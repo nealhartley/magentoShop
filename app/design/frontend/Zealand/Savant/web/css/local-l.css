@@ -280,7 +280,11 @@ input[type="email"]{
 	margin: auto;
 }
 
-.item .product .product-item{
+.item.product.product-item{
+	background-color: #f4f4f4;
+}
+
+.product-image-container{
 	background-color: #f4f4f4;
 }
 
