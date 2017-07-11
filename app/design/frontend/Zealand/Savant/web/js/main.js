@@ -15,7 +15,7 @@ function ($) {
 					metal:"nutButtons.jpg" ,
 					woodcoconut:"nutButtons.jpg" ,
 					leathercorded:"leatherButtons.jpg" ,
-					nylonpolyestetr:"nutButtons.jpg" ,
+					nylonpolyester:"nutButtons.jpg" ,
 					other:"nutButtons.jpg" ,
 				},
 				ribbioncordtape:{default:"ribbon.jpg",
@@ -50,7 +50,9 @@ function ($) {
 		var path = imagelocation.imagelocation;
         console.log(imagelocation.imagelocation);
 		var address = $(location).attr('href');
+        address = address.replace(/-/g,"");
 		address = address.replace(".html","");
+
 		console.log(address);
 		var header = $(".page-header");
 		//Preping Address for object navigation
