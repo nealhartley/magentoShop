@@ -116,6 +116,7 @@ input[type="text"]{
 .navigation{
     background-color: #333333;
 	float: left;
+	max-width: 100%;
 }
 
 .level-top{
@@ -237,6 +238,7 @@ input[type="text"]{
 input[type="email"]{
 	background-color: #666666;
 	border: none;
+	color: white;
 }
 
 .footer.content .block{
@@ -272,18 +274,50 @@ input[type="email"]{
 .page-products .product-item-info {
     background-color:#f4f4f4;
 		
-	
+}
+
+.page-products .product-item-info{
+	margin: auto;
+}
+
+.item .product .product-item{
+	background-color: #f4f4f4;
 }
 
 
+/*contact page*/
 
+.legend{
+	display: none;
+}
 
+.note{
+	display: none;
+}
 
+.field.name.required{
+	margin-top: 5em;
+}
 
+.form .contact{
+	
+}
 
+.fieldset input[type="email"]{
+	background-color: white;
+	color: black;
+	border: 1px solid #c2c2c2;
+}
 
+.fieldset input[type="text"]{
+	background-color: white;
+	color: black;
+	border: 1px solid #c2c2c2;
+}
 
-
+.actions-toolbar{
+	margin-bottom: 5em;
+}
 
 
 
