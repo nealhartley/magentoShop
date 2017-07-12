@@ -8,7 +8,7 @@ function ($) {
 		var out = "zips.jpg";
 
 		//Create the object with links to pictures.
-		var lookup = {default:"zip.jpg",
+		var lookup = {default:"zips.jpg",
 				buttons:{default:"nutButtons.jpg",
 					shell:"shellButtons.jpg" ,
 					corozonut:"nutButtons.jpg" ,
@@ -18,7 +18,7 @@ function ($) {
 					nylonpolyester:"nutButtons.jpg" ,
 					other:"nutButtons.jpg" ,
 				},
-				ribbioncordtape:{default:"ribbon.jpg",
+				ribboncordtape:{default:"ribbon.jpg",
 					ribbion:"ribbon.jpg" ,
 					cord:"ribbon.jpg" ,
 					tape:"ribbon.jpg" ,
@@ -42,7 +42,7 @@ function ($) {
 					fringing:"trims.jpg" ,
 					braid:"trims.jpg" ,
 				},
-				sale:{default:"zip.jpg",
+				sale:{default:"zips.jpg",
 				},
 			};
 
