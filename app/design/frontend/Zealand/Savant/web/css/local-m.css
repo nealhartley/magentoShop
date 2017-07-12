@@ -31,10 +31,13 @@ body a:hover{
     background-size: 200% 80%;
     background-repeat: no-repeat;
     background-position: -10em 10em;
-    padding-bottom: 30em;
+    
+	margin-bottom: 0px;
+	padding-bottom: 30em;
+	border-bottom: none;
+	/*border-bottom: 5em solid white;*/
 	
-    border-bottom-style: none; 
-	border-bottom: 1px solid black;
+	
 }
 
 .page-header.panel-wrapper{
@@ -49,7 +52,6 @@ body a:hover{
 
 .panel.wrapper{
     border-bottom-style: none;
-	border-bottom: 1px solid black;
 }
 
 #search{
@@ -70,8 +72,45 @@ body a:hover{
 }
 
 .logo{
-	margin-left: 2em;
+	margin: auto;
+	float: none;
+	position: static;
+	
 }
+
+.logo img{
+	margin: auto;
+}
+
+.block.block-search{
+	width: 35px;
+	float: right;
+	position: absolute;
+	left: calc(100% - 40px);
+	top: 5px;
+	
+}
+
+.block-search .control {
+	margin-top: 400px;
+    border-top: none;
+	width: 100vw;
+}
+
+#search{
+	position: absolute;
+	width: 60vw;
+	top: 100px;
+	left: calc(-80vw + 45px);
+	background-color: rgba(153, 153, 153, 0.3);
+	color: white;
+}
+
+#search[type='text']{
+	border: none;
+}
+
+
 
 /*   styling for the tabbed inventory bar from here*/
 
@@ -108,11 +147,27 @@ body a:hover{
 	
 }
 
-styles-m.css:5473
 .minicart-wrapper {
     display: inline-block;
     position: relative;
     float: right;
+}
+
+/*pop out inventory bar*/
+.navigation li.level0:last-child {
+    border-bottom: none;
+}
+
+.navigation .level0 {
+    border-top: none;
+}
+
+.navigation a:hover {
+    color: #1c7496;
+}
+
+.navigation .submenu:not(:first-child){
+	padding-left: 1em;
 }
 
 
@@ -142,7 +197,9 @@ input[type="email"]{
 }
 
 .footer.content {
-    border-top: 1px solid #333333;
+   /* border-top: 5em solid white; */
+	margin-top: 0px;
+	border-top: none;
 }
 
 .footer .copyright, .footer .bugs {

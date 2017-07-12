@@ -53,6 +53,9 @@ body a:hover{
 	border-bottom: 1px solid black;
 }
 
+.page-header .header.panel{
+	max-width: 100%;
+}
 
 #search{
     background-color: #333333;
@@ -84,6 +87,7 @@ body a:hover{
 
 input[type="text"]{
 	border : none;
+	height: 27px;
 }
 
 .action .advanced{
@@ -93,6 +97,7 @@ input[type="text"]{
 .action.search{
     float: right;
     background-color: #1c7496;
+	height: 25px;
 }
 
 .page-footer{
@@ -219,6 +224,10 @@ input[type="text"]{
 
 .columns .column.main {
     padding-bottom: 0px;
+}
+
+.columns a{
+	color: #1c7496;
 }
 
 #maincontent{
