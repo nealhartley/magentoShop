@@ -21,7 +21,7 @@ $groupBehavior = $block->getGroupBehaviour() ? $block->getGroupBehaviour() : '{"
     <div class="sections <?php /* @escapeNotVerified */ echo $groupCss ?>">
         <?php $layout = $block->getLayout(); ?>
         <div class="section-items <?php /* @escapeNotVerified */ echo $groupCss ?>-items" data-mage-init='<?php /* @escapeNotVerified */ echo $groupBehavior ?>'>
-        <?php echo $this->getChildHtml('minicart') ?>
+
             <?php foreach ($detailedInfoGroup as $name):?>
                 <?php
                     $html = $layout->renderElement($name);
@@ -36,9 +36,11 @@ $groupBehavior = $block->getGroupBehaviour() ? $block->getGroupBehaviour() : '{"
 
                 </div>
                 <div class="section-item-content <?php /* @escapeNotVerified */ echo $groupCss ?>-item-content" id="<?php /* @escapeNotVerified */ echo $alias; ?>" data-role="content"><?php /* @escapeNotVerified */ echo $html; ?>
+
                 </div>
 
             <?php endforeach;?>
+            <?php echo $this->getChildHtml('minicart') ?>
         </div>
     </div>
 <?php endif; ?>

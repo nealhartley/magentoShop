@@ -107,10 +107,12 @@ define(["jquery",
                             }
                         });
                         return false;
+                    }else if(trueAddress != config.baseurl){
+                        newout = "blank";
                     }
                 });
-
-                header.css("background-image","url(" + path.replace("zips.jpg", newout) + ")");
+                if(newout !== "blank"){
+                header.css("background-image","url(" + path.replace("zips.jpg", newout) + ")");}
             });
             $("li > a").mouseleave(function(){
                 if(out !== "blank"){
