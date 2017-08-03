@@ -5,9 +5,15 @@ define(["jquery",
         var mageJsComponent = function(config,headerobj )
         {
             //Output string
-            var out = "zips.jpg";
+            var headeronFLAG = 0;
+            var Lastimage = "zips.jpg";
 
             //Create the object with links to pictures.
+            var pictureArray = [
+                "zips.jpg","nutButtons.jpg","shellButtons.jpg","leatherButtons.jpg",
+                "ribbon.jpg","fastenerTapes.jpg","snapsDomes.jpg",
+                "hookEye.jpg" , "shindoElastics.jpg", "trims.jpg", "lace.jpg"
+            ];
             var lookup = {default:"zips.jpg",
                 buttons:{default:"nutButtons.jpg",
                     shell:"shellButtons.jpg" ,
@@ -53,7 +59,9 @@ define(["jquery",
             console.log(config.imagelocation);
             var burl = config.baseurl;
             console.log(burl);
-
+            var waitTime = parseInt(config.timeMS) * 1000;
+            console.log(waitTime);
+            console.log(config.timeMS);
             var address = $(location).attr('href');
             var trueAddress = address;
             address = address.replace(/-/g,"");
@@ -67,28 +75,45 @@ define(["jquery",
             //Navigating object with for each loop
             $.each(addressParts, function(I, part){
                 if (Object.keys(lookup).includes(part)){
-                    out = lookup[part].default;
+                    headeronFLAG = 1;
                     var layer2 = Object.keys(lookup[part]);
                     $.each(layer2, function(I2, key){
                         if(addressParts.includes(key)){
-                            out = lookup[part][key];
+                            headeronFLAG = 1;
                             return false;
                         }
                     });
                     return false;
-                }else if(trueAddress != config.baseurl){
+                }else if(trueAddress == config.baseurl){
                     console.log(trueAddress);
                     console.log(config.baseurl);
-                    out = "blank";
+                    headeronFLAG = 1;
                 }
             });
 
+            //Function to cycle image
+            function cyclehead() {
+                var currentImage;
+                var length;
+                var random;
+                console.log("cychead");
+                do {
+                 currentImage = pictureArray[Math.floor(Math.random()*pictureArray.length)];
+                 console.log(currentImage)
+                }
+                while (currentImage === Lastimage);
+                Lastimage = currentImage;
+                header.css("background-image","url(" + path.replace("zips.jpg", currentImage) + ")");
+                return;
+            }
 
-            if(out !== "blank"){
-                path = path.replace("zips.jpg", out);
-                //Set new image
-                path = "url(" + path + ")";
-                header.css("background-image",path);}
+            if(headeronFLAG === 1){
+                //Set first image
+                header.css("background-image","url(" + path + ")");
+                setInterval(cyclehead, waitTime );
+            }
+
+
         };
 
         return mageJsComponent;
