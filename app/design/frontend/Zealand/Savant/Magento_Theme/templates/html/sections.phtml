@@ -40,6 +40,8 @@ $groupBehavior = $block->getGroupBehaviour() ? $block->getGroupBehaviour() : '{"
                 </div>
 
             <?php endforeach;?>
+
+            <?php echo $this->getChildHtml('wish-list-link') ?>
             <?php echo $this->getChildHtml('minicart') ?>
         </div>
     </div>

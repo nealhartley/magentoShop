@@ -2,7 +2,8 @@
     <body>
         <move element = "navigation.sections" destination = "header.container"/>
 		<move element = "minicart" destination = "navigation.sections"/>
-		
+        <move element = "wish-list-link" destination = "navigation.sections"/>
+
 		<move element = "form.subscribe" destination="footer" before="footer_links"/>
 		
 		<referenceBlock name="catalog.compare.sidebar" remove="true"/>
