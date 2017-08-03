@@ -44,7 +44,8 @@ $welcomeMessage = $block->getWelcome();
 <?php endswitch; ?>
 <!-- auniquestring  -->
 <?php echo $block->getViewFileUrl('images/backgrounds/zips.jpg'); ?>
-<script type="text/x-magento-init">
+<?php
+/*<script type="text/x-magento-init">
     {
         ".page-header": {
             "js/main": { "imagelocation": "<?php echo $block->getViewFileUrl('images/backgrounds/zips.jpg'); ?>","baseurl": "<?php echo $block->getBaseUrl(); ?>" }
@@ -56,6 +57,15 @@ $welcomeMessage = $block->getWelcome();
     {
         ".page-header": {
             "js/imagehover": { "imagelocation": "<?php echo $block->getViewFileUrl('images/backgrounds/zips.jpg'); ?>","baseurl": "<?php echo $block->getBaseUrl(); ?>" }
+        }
+    }
+</script>*/
+?>
+
+/*<script type="text/x-magento-init">
+    {
+        ".page-header": {
+            "js/main": { "imagelocation": "<?php echo $block->getViewFileUrl('images/backgrounds/zips.jpg'); ?>","timeMS": "30","baseurl": "<?php echo $block->getBaseUrl(); ?>" }
         }
     }
 </script>
