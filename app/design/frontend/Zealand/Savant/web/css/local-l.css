@@ -9,58 +9,59 @@ and open the template in the editor.
 */
 
 body{
-    background-color: black;
-    font-family: 'Roboto', sans-serif;
-    color: #D0D0D0;
+	background-color: black;
+	font-family: 'Roboto', sans-serif;
+	color: #D0D0D0;
 	line-height: 1;
 }
 
 body a{
-    color: #D0D0D0;
-    text-decoration:none;
+	color: #D0D0D0;
+	text-decoration:none;
 }
 
 body a:hover{
-    color: #1c7496;
-    text-decoration:none;
+	color: #1c7496;
+	text-decoration:none;
 }
+
 /*Styling for link nav bar holder*/
 .Savant-wishlist-link-wrapper{
 
 	display: inline-block;
-	position: relative;
-	float: right;
+	/*position: relative;
+	float: right;*/
 
 }
 
 /*styling for the header. this includes logo and search bar plus the log in and create accoudn links at top*/
 .page-header{
-	
-    background-size: 100% 80%;
-    background-repeat: no-repeat;
-    background-position: 0em 6em;
 
-	
-    border-bottom-style: none; 
+	background-size: 100% 80%;
+	background-repeat: no-repeat;
+	background-position: 0em 6em;
+
+
+	border-bottom-style: none;
 	border-bottom: 1px solid black;
 }
 
 .page-header .panel.wrapper {
-   	border-bottom-color: black;
+	border-bottom-color: black;
 	border-bottom: 1px solid black;
 }
 
 .logo{
-    margin-left: 20px;
+	margin-left: 20px;
 }
 
 .header.content{
 	padding-top: 0px;
-    max-width: 100%;
+	max-width: 100%;
 }
 
 .panel.wrapper{
-    border-bottom-style: none;
+	border-bottom-style: none;
 	border-bottom: 1px solid black;
 }
 
@@ -69,7 +70,7 @@ body a:hover{
 }
 
 #search{
-    background-color: #333333;
+	background-color: #333333;
 }
 
 .block-search .action.search {
@@ -105,15 +106,15 @@ input[type="text"]{
 
 
 .block-search input {
-   
-    padding-right: 0px;
+
+	padding-right: 0px;
 	color: white;
-   
+
 }
 
 .block-search .nested {
-    display: none;
-  
+	display: none;
+
 }
 
 input[type="text"]{
@@ -126,63 +127,73 @@ input[type="text"]{
 }
 
 .action.search{
-    float: right;
-    background-color: #1c7496;
+	float: right;
+	background-color: #1c7496;
 	height: 25px;
 }
 
 .page-footer{
-    background-color: #333333;
+	background-color: #333333;
 }
 
 .block-search{
-    top: 2em;
+	top: 2em;
+}
+
+/*styling for minicart go to check out pop out*/
+
+.minicart-wrapper .block-minicart{
+	color:#333333;
+}
+.minicart-wrapper {
+	display: inline-block;
+	position: relative;
+	float: none;
 }
 
 /*   styling for the tabbed inventory bar from here*/
 
 .nav-sections{
-    margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .section-items{
-    background-color: #333333;
+	background-color: #333333;
 }
 
 .navigation{
-    background-color: #333333;
+	background-color: #333333;
 	float: left;
-	max-width: 87%;
-    font-weight: 500;
+	max-width: 80%;
+	font-weight: 500;
 }
 
-
 .level-top{
-    color: white;
+	color: white;
 }
 
 .level10.active{
-    background-color: #333333;
-    color: white;
+	background-color: #333333;
+	color: white;
 }
 
 .navigation .level0.active > .level-top, .navigation .level0.has-active > .level-top {
-    border-color: #333333;
-    border-style: none;
-    border-width: 0 0 3px;
-    color: white;
+	border-color: #333333;
+	border-style: none;
+	border-width: 0 0 3px;
+	color: white;
 	background-color: #1c7496;
-   
+
 }
 
 .navigation .level0.active > .level-top: hover, .navigation .level0.has-active > .level-top: hover {
-    border-color: #333333;
-    border-style: none;
-    border-width: 0 0 3px;
-    color: white;
+	border-color: #333333;
+	border-style: none;
+	border-width: 0 0 3px;
+	color: white;
 	background-color: #1c7496;
-	
-   
+
+
 }
 
 .navigation .level0 > .level-top {
@@ -196,7 +207,7 @@ input[type="text"]{
 
 .navigation .level0 > .level-top.ui-state-focus{
 	color: #1c7496;
-	
+
 }
 
 .navigation .level0 > .level-top {
@@ -206,24 +217,24 @@ input[type="text"]{
 
 
 .level0.has-active > .level-top {
-    background-color: #1c7496;
+	background-color: #1c7496;
 	border-style: hidden;
 }
 
 .navigation .level0 .submenu .active > a {
-  
-    border-style: hidden;
+
+	border-style: hidden;
 	background-color: #1c7496;
 }
 
 .navigation .level0 .submenu .active > a: hover {
-  
-    border-style: hidden;
+
+	border-style: hidden;
 	background-color: #1c7496;
 }
 
 .navigation .level0.has-active > .level-top {
-    color: white;    
+	color: white;
 }
 
 .navigation .level0 .submenu {
@@ -243,20 +254,20 @@ input[type="text"]{
 
 /*main content styling*/
 .breadcrumbs{
-    padding-top: 1em;
+	padding-top: 1em;
 	padding-bottom: 2em;
-    margin-bottom: 0em;
-    background-color: white;
-    color: #999999;
-    max-width: 100%;
+	margin-bottom: 0em;
+	background-color: white;
+	color: #999999;
+	max-width: 100%;
 }
 
 .column.main {
-    min-height: 0px;
+	min-height: 0px;
 }
 
 .columns .column.main {
-    padding-bottom: 0px;
+	padding-bottom: 0px;
 }
 
 .columns a{
@@ -264,9 +275,9 @@ input[type="text"]{
 }
 
 #maincontent{
-    background-color: white;
-    max-width:100%;
-    color:#1c7496;
+	background-color: white;
+	max-width:100%;
+	color:#1c7496;
 }
 
 
@@ -288,12 +299,12 @@ input[type="email"]{
 }
 
 .footer.content {
-    border-top: 1px solid #333333;
-	
+	border-top: 1px solid #333333;
+
 }
 
 .footer .copyright, .footer .bugs {
-    display: none;
+	display: none;
 }
 
 .footer.content .links{
@@ -302,13 +313,13 @@ input[type="email"]{
 
 
 .block.newsletter .action.subscribe {
-    border-radius: 0px;
+	border-radius: 0px;
 }
 
 .action.primary {
-    background-image: none;
-    background: #1c7496;
-    border: 1px solid #1c7496;
+	background-image: none;
+	background: #1c7496;
+	border: 1px solid #1c7496;
 
 }
 
@@ -327,8 +338,8 @@ input[type="email"]{
 /* styling for individual products*/
 
 .page-products .product-item-info {
-    background-color:#f4f4f4;
-		
+	background-color:#f4f4f4;
+
 }
 
 .page-products .product-item-info{
@@ -339,6 +350,9 @@ input[type="email"]{
 	background-color: #f4f4f4;
 }
 
+.product-info-main .box-tocart .action.tocart, .product-options-bottom .box-tocart .action.tocart{
+	font-size: 1em;
+}
 
 /*contact page*/
 
@@ -355,7 +369,7 @@ input[type="email"]{
 }
 
 .form .contact{
-	
+
 }
 
 .fieldset input[type="email"]{
