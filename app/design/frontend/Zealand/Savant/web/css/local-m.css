@@ -24,6 +24,15 @@ body a:hover{
     text-decoration:none;
 }
 
+.Savant-wishlist-link-wrapper{
+
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    float: none;
+
+}
 
 /*styling for the header. this includes logo and search bar plus the log in and create accoudn links at top*/
 .page-header{
@@ -141,16 +150,12 @@ body a:hover{
    
 }
 
-.minicart-wrapper {
-    position: static;
-	float: none;
-	
-}
 
 .minicart-wrapper {
     display: inline-block;
-    position: relative;
-    float: right;
+    position: absolute;
+    bottom: 0;
+    float: none;
 }
 
 /*pop out inventory bar*/
