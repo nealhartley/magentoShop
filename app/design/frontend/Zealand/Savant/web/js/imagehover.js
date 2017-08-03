@@ -44,6 +44,8 @@ define(["jquery",
                 },
                 sale:{default:"zips.jpg",
                 },
+                zips:{default:"zips.jpg",
+                },
             };
 
             //alert("Look in your browser's console");
@@ -84,7 +86,7 @@ define(["jquery",
             newpath = "url(" + newpath + ")";
 
 
-            $("li > a").hover(function(){
+            $(".navigation li > a").hover(function(){
                 var link = $( this ).attr('href');
                  var newout = "zips.jpg";
                 link = link.replace(/-/g,"");
@@ -114,7 +116,7 @@ define(["jquery",
                 if(newout !== "blank"){
                 header.css("background-image","url(" + path.replace("zips.jpg", newout) + ")");}
             });
-            $("li > a").mouseleave(function(){
+            $(".navigation li > a").mouseleave(function(){
                 if(out !== "blank"){
                 header.css("background-image",newpath);}
                 else{
