@@ -2,7 +2,7 @@ define(["jquery",
     ],
     function ($) {
         "use strict";
-        var mageJsComponent = function(imagelocation, baseurl)
+        var mageJsComponent = function(config,headerobj )
         {
             //Output string
             var out = "zips.jpg";
@@ -47,9 +47,13 @@ define(["jquery",
             };
 
             //alert("Look in your browser's console");
-            var path = imagelocation.imagelocation;
-            console.log(imagelocation.imagelocation);
+            var path = config.imagelocation;
+            console.log(config.imagelocation);
+            var burl = config.baseurl;
+            console.log(burl);
+            console.log($(location).attr('href'));
             var address = $(location).attr('href');
+            var trueAddress = address;
             address = address.replace(/-/g,"");
             address = address.replace(".html","");
 
@@ -70,7 +74,7 @@ define(["jquery",
                         }
                     });
                     return false;
-                }else if($(location).attr('href') != baseurl.baseurl){
+                }else if(trueAddress != config.baseurl){
                     out = "blank";
                 }
             });
