@@ -152,14 +152,11 @@ input[type="text"]{
 .navigation{
     background-color: #333333;
 	float: left;
-	max-width: 100%;
+	max-width: 87%;
     font-weight: 500;
 }
 
-/*navigation length override*/
-.sections .nav-sections .navigation{
-	max-width: 87%;
-}
+
 .level-top{
     color: white;
 }
