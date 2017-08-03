@@ -2,7 +2,7 @@ define(["jquery",
     ],
     function ($) {
         "use strict";
-        var mageJsComponent = function(imagelocation)
+        var mageJsComponent = function(imagelocation, baseurl)
         {
             //Output string
             var out = "zips.jpg";
@@ -70,6 +70,8 @@ define(["jquery",
                         }
                     });
                     return false;
+                }else if($(location).attr('href') != baseurl.baseurl){
+                    out = "blank";
                 }
             });
 
@@ -107,7 +109,11 @@ define(["jquery",
                 header.css("background-image","url(" + path.replace("zips.jpg", newout) + ")");
             });
             $("li > a").mouseleave(function(){
-                header.css("background-image",newpath);
+                if(out !== "blank"){
+                header.css("background-image",newpath);}
+                else{
+                    header.css("background-image","");
+                }
             });
 
         };

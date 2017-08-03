@@ -2,7 +2,7 @@ define(["jquery",
 ], 
 function ($) {
 	"use strict";
-    var mageJsComponent = function(imagelocation)
+    var mageJsComponent = function(imagelocation, baseurl)
     {
 		//Output string
 		var out = "zips.jpg";
@@ -42,6 +42,8 @@ function ($) {
 					fringing:"trims.jpg" ,
 					braid:"trims.jpg" ,
 				},
+            zips:{default:"zips.jpg",
+            },
 				sale:{default:"zips.jpg",
 				},
 			};
@@ -55,7 +57,7 @@ function ($) {
 
 		console.log(address);
 		var header = $(".page-header");
-		//Preping Address for object navigation
+		//Prepping Address for object navigation
 		var addressParts = address.split("/");
 		console.log(addressParts);
 		//Navigating object with for each loop
@@ -70,15 +72,17 @@ function ($) {
 						}
 				});
 				return false;
+			}else if($(location).attr('href') != baseurl.baseurl){
+				out = "blank";
 			}
 		});
 
 
-
+		if(out !== "blank"){
 		path = path.replace("zips.jpg", out);
 		//Set new image
 		path = "url(" + path + ")";
-		header.css("background-image",path);
+		header.css("background-image",path);}
     };
 
     return mageJsComponent;
