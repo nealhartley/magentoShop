@@ -7,8 +7,16 @@
 //use before in the moves to position
 		<move element = "form.subscribe" destination="footer" before="footer_links"/>
 		
+		
 		<referenceBlock name="catalog.compare.sidebar" remove="true"/>
 		
+		<referenceContainer name="footer-container">
+			<block class="Magento\Cms\Block\Block" name="customer_service" before="footer_links">
+			  <arguments>
+				 <argument name="block_id" xsi:type="string">customer_service</argument>
+			  </arguments>
+			</block>
+		</referenceContainer>
 
     </body>
 </page>

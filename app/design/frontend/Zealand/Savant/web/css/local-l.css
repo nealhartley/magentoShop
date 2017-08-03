@@ -151,6 +151,13 @@ input[type="text"]{
 	float: none;
 }
 
+/*styling for minicart go to check out pop out*/
+
+.minicart-wrapper .block-minicart{
+	color:#333333;
+}
+
+
 /*   styling for the tabbed inventory bar from here*/
 
 .nav-sections{
@@ -311,6 +318,9 @@ input[type="email"]{
 	width: 70%;
 }
 
+.footer.links .nav.item a{
+	padding-bottom: 2em;
+}
 
 .block.newsletter .action.subscribe {
 	border-radius: 0px;

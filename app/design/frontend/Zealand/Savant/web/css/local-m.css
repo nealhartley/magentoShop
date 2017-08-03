@@ -36,13 +36,13 @@ body a:hover{
 
 /*styling for the header. this includes logo and search bar plus the log in and create accoudn links at top*/
 .page-header{
-	background-image: url("../images/backgrounds/zips.jpg");
+
     background-size: 200% 80%;
     background-repeat: no-repeat;
-    background-position: -10em 10em;
+    background-position: -10em 1em;
     
 	margin-bottom: 0px;
-	padding-bottom: 30em;
+    padding-bottom: 5em;
 	border-bottom: none;
 	/*border-bottom: 5em solid white;*/
 	
@@ -61,10 +61,6 @@ body a:hover{
 
 .panel.wrapper{
     border-bottom-style: none;
-}
-
-#search{
-    background-color: #999999;
 }
 
 .action.search{
@@ -106,13 +102,19 @@ body a:hover{
 	width: 100vw;
 }
 
+.block-search .label{
+    display: none;
+}
+
 #search{
+    height: 27px;
 	position: absolute;
 	width: 60vw;
 	top: 100px;
 	left: calc(-80vw + 45px);
-	background-color: rgba(153, 153, 153, 0.3);
+	background-color: rgba(51, 51, 51, 0.8);
 	color: white;
+
 }
 
 #search[type='text']{
@@ -191,9 +193,29 @@ body a:hover{
     color:#1c7496;
 }
 
+#maincontent a{
+    color: #333333;
+}
+
 .columns .column.main {
 	padding-bottom: 0px;
 }
+
+.products-grid .product-item{
+    width: 100%;
+
+}
+
+.page-products .product-item-info{
+    margin: auto;
+
+}
+
+.block.filter{
+    display: none;
+ }
+
+
 
 /*footer styling*/
 
@@ -221,5 +243,31 @@ input[type="email"]{
     background: #1c7496;
     border: 1px solid #1c7496;
 
+}
+
+element.style {
+    padding-left: 0em;
+}
+
+/*styling for the random pages*/
+
+.fieldset input[type="email"]{
+    background-color: white;
+    color: black;
+    border: 1px solid #c2c2c2;
+}
+
+.fieldset input[type="text"]{
+    background-color: white;
+    color: black;
+    border: 1px solid #c2c2c2;
+}
+
+.page-title-wrapper{
+    padding-top: 3em;
+}
+
+.primary{
+    padding-bottom: 3em;
 }
 
