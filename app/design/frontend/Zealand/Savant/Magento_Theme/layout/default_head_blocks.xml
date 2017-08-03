@@ -3,7 +3,8 @@
         <!-- Add local resources -->    	
         <css src="css/local-l.css" media="screen and (min-width: 768px)"/>
         <css src="css/local-m.css" media="screen and (max-width: 768px)"/>
-        
+        <link src="Javascript/header_controller.js"/>
+		<!--<link src="Javascript/asset_injector.js"/>-->
         <!-- Google Fonts -->
         <link src="http://fonts.googleapis.com/css?family=Roboto" src_type="url" /> 
 		
