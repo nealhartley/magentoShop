@@ -7,6 +7,7 @@ define(["jquery",
             //Output string
             var headeronFLAG = 0;
             var Lastimage = "zips.jpg";
+            var out ="zips.jpg";
 
             //Create the object with links to pictures.
             var pictureArray = [
@@ -75,11 +76,13 @@ define(["jquery",
             //Navigating object with for each loop
             $.each(addressParts, function(I, part){
                 if (Object.keys(lookup).includes(part)){
-                    headeronFLAG = 1;
+                    headeronFLAG = 2;
+                    out = lookup[part].default;
                     var layer2 = Object.keys(lookup[part]);
                     $.each(layer2, function(I2, key){
                         if(addressParts.includes(key)){
-                            headeronFLAG = 1;
+                            headeronFLAG = 2;
+                            out = lookup[part][key];
                             return false;
                         }
                     });
@@ -111,6 +114,8 @@ define(["jquery",
                 //Set first image
                 header.css("background-image","url(" + path + ")");
                 setInterval(cyclehead, waitTime );
+            }else if(headeronFLAG === 2){
+                header.css("background-image","url(" + path.replace("zips.jpg", out) + ")");
             }
 
 
