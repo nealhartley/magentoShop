@@ -71,7 +71,7 @@ define(["jquery",
             console.log(address);
             var header = $(".page-header");
             //Prepping Address for object navigation
-            var addressParts = address.split("/");
+            var addressParts = address.split(/[\?\/]/);
             console.log(addressParts);
             //Navigating object with for each loop
             $.each(addressParts, function(I, part){
@@ -87,7 +87,7 @@ define(["jquery",
                         }
                     });
                     return false;
-                }else if(trueAddress == config.baseurl){
+                }else if(trueAddress == config.baseurl || trueAddress.split("?",1) == config.baseurl ){
                     console.log(trueAddress);
                     console.log(config.baseurl);
                     headeronFLAG = 1;
